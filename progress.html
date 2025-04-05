@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Мій прогрес</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="progress-page">
+    <header>
+        <h1 class="my-plan">Мій прогрес</h1>
+        <nav>
+            <a href="index.html">Тренування</a>
+            <a href="progress.html">Мій прогрес</a>
+            <a href="ration.html">Раціон</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="progress-summary">
+            <h2>Загальна статистика</h2>
+            <p>Всього тренувань: <strong>4</strong></p>
+            <p>Тривалість тренувань: <strong>50 хв</strong></p>
+            <p>Спалено калорій: <strong>1250 ккал</strong></p>
+        </section>
+
+            
+            <section class="progress-summary">
+                <h2>Мій прогрес</h2>
+                <p>Виконані тренування: <strong id="completed-count">0</strong> / <span id="total-workouts">0</span></p>
+                <p>Загальний час: <strong id="total-duration">0</strong> хв</p>
+                <p>Спалені калорії: <strong id="total-calories">0</strong> ккал</p>
+                
+                <h3>Прогрес</h3>
+                <p>Виконано:</p>
+                <div class="progress-bar"><div class="progress" id="progress-completed" style="width: 0%;">0%</div></div>
+        
+                <p>Час:</p>
+                <div class="progress-bar"><div class="progress" id="progress-time" style="width: 0%;">0%</div></div>
+        
+                <p>Калорії:</p>
+                <div class="progress-bar"><div class="progress" id="progress-calories" style="width: 0%;">0%</div></div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Телефон: +380 (99) 123-45-67</p>
+            <p><a href="#">Instagram: instagram</a></p>
+            <p><a href="#">Telegram: Telegram</a></p>
+        </div>
+    </footer>
+</body>
+</html>
