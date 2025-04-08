@@ -82,6 +82,31 @@ nav a:hover {
 .workout p {
   color: #555;
 }
+.workout button {
+  background-color: #be6674; /* Початковий колір кнопки */
+  color: white; /* Текст на кнопці */
+  padding: 10px 20px; /* Відступи для кнопки */
+  font-size: 16px; /* Розмір шрифту */
+  border: none; /* Без рамки */
+  border-radius: 5px; /* Закруглені кути */
+  cursor: pointer; /* Курсор у вигляді руки при наведенні */
+  transition: background-color 0.3s ease; /* Плавна зміна кольору при взаємодії */
+}
+
+.workout button:hover {
+  background-color: #a14f4e; /* Зміна кольору при наведенні */
+}
+
+.workout button:active {
+  background-color: #d1d1d1; /* Колір при натисканні (сірий) */
+}
+
+/* Стиль для кнопки після натискання */
+.workout button.active {
+  background-color: #d1d1d1; /* Сірий колір після натискання */
+  color: #555; /* Текст сірого кольору */
+}
+
 
 footer {
   background-color: #be6674;

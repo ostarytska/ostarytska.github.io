@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Кардіо тренування",
+        "description": "Активне кардіо для спалювання калорій.",
+        "calories": "300 ккал",
+        "duration": "10 хв",
+        "videoUrl": "https://www.youtube.com/embed/w-2xBpShkCQ?si=qTQyHQZ-REKFWYyJ",
+        "status": "Не розпочато"
+    },
+    {
+        "title": "Силові вправи",
+        "description": "Силові вправи для потужного нарощування м’язової маси та максимальних результатів.",
+        "calories": "400 ккал",
+        "duration": "15 хв",
+        "videoUrl": "https://www.youtube.com/embed/fQJXQI5iEqE",
+        "status": "Не розпочато"
+    },
+    {
+        "title": "Йога",
+        "description": "Розслаблення і гнучкість тіла для покращення самопочуття.",
+        "calories": "250 ккал",
+        "duration": "10 хв",
+        "videoUrl": "https://www.youtube.com/embed/XBlAP8QLkh8",
+        "status": "Не розпочато"
+    },
+    {
+        "title": "Пілатес",
+        "description": "Розвиток гнучкості, зміцнення м’язів та покращення постави.",
+        "calories": "300 ккал",
+        "duration": "15 хв",
+        "videoUrl": "https://www.youtube.com/embed/Y9ouar2wzIc",
+        "status": "Не розпочато"
+    }
+]
