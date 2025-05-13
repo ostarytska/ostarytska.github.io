@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import WorkoutCard from "../components/WorkoutCard";
 
 
+import '../styles/workout.css';
+
 function Training() {
   const [workouts, setWorkouts] = useState([]);
   const [filter, setFilter] = useState("all");
@@ -30,23 +32,27 @@ function Training() {
 
   return (
     <>
-      <Header title="My Plan" />
+      <Header title="My Plan"  backgroundColor="#be6674"/>
       <main>
         <section className="training-cards">
-          <h1>Тренування</h1>
+         
 
-          <label htmlFor="filter">Фільтр за типом тренування:</label>
-          <select
+          <div className="filter-inline">
+            <label htmlFor="filter">Фільтр тренування:</label>
+            <select
               id="filter"
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
-          >
-            <option value="all">Усі</option>
-            <option value="cardio">Кардіо</option>
-            <option value="strength">Силові</option>
-            <option value="yoga">Йога</option>
-            <option value="pilates">Пілатес</option>
-          </select>
+            >
+              <option value="all">Усі</option>
+              <option value="cardio">Кардіо</option>
+              <option value="strength">Силові</option>
+              <option value="yoga">Йога</option>
+              <option value="pilates">Пілатес</option>
+            </select>
+          </div>
+
+
 
           <div className="workouts">
             {filtered.length === 0 ? (
@@ -64,7 +70,7 @@ function Training() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer backgroundColor="#be6674"/>
     </>
   );
 }

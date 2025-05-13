@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function ProgressChart({ total, completed }) {
   const percent = (value, max) => (max === 0 ? 0 : Math.round((value / max) * 100));
 

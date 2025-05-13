@@ -1,0 +1,68 @@
+.workouts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .workout {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .workout:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  .workout iframe {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .workout h3 {
+    margin: 10px 0;
+  }
+  
+  .workout p {
+    color: #555;
+  }
+  .workout button {
+    background-color: #be6674; 
+    color: white; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .workout button:disabled {
+    background-color: gray;
+  }
+  
+  .workout button:hover {
+    background-color: #a14f4e; 
+  }
+  
+  .workout button:active {
+    background-color: #d1d1d1; 
+  }
+  
+  
+  .workout button.active {
+    background-color: #d1d1d1; 
+    color: #555; 
+  }
+  footer .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }

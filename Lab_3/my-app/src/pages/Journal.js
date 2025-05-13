@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import '../styles/workout.css';
 
 function Journal() {
   const savedWorkouts =
@@ -9,7 +9,7 @@ function Journal() {
 
   return (
     <>
-      <Header title="Журнал тренувань" />
+      <Header title="Журнал тренувань" backgroundColor="#be6674" />
       <main>
         <section className="training-cards">
           <div className="workouts">
@@ -21,7 +21,6 @@ function Journal() {
                     height="160"
                     src={w.videoUrl}
                     title={w.title}
-                    frameBorder="0"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
                   ></iframe>
@@ -44,7 +43,7 @@ function Journal() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer backgroundColor="#be6674"/>
     </>
   );
 }

@@ -1,0 +1,71 @@
+.progress-summary {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .progress-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  
+  
+  .progress-summary h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1421b7;
+    padding-bottom: 5px;
+  }
+  
+  .progress-summary h3 {
+    font-size: 20px;
+    color: #34495e;
+    margin-top: 20px;
+  }
+  
+  
+  .progress-summary p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  
+  .progress-bar {
+    width: 100%;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress {
+    height: 100%;
+    background: linear-gradient(to right, #052361, #4c69da);
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  
+  .progress-page footer {
+    background-color: #b0bec5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }

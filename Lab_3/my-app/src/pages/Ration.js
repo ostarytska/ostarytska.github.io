@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import RecipeCard from "../components/RecipeCard";
-
+import '../styles/ration.css';
 function Ration() {
   const recipes = [
     {
@@ -68,15 +68,16 @@ function Ration() {
 
   return (
     <>
-      <Header title="Раціон" />
+      <Header title="Раціон" backgroundColor="#c4a590" /> 
       <main className="ration-page">
         {recipes.map((recipe, i) => (
           <RecipeCard key={i} {...recipe} />
         ))}
       </main>
-      <Footer />
+      <Footer backgroundColor="#c4a590"/>
     </>
   );
 }
+
 
 export default Ration;

@@ -7,7 +7,6 @@ function WorkoutCard({ workout, onStart, isCompleted }) {
           height="160"
           src={workout.videoUrl}
           title={workout.title}
-          frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
         ></iframe>

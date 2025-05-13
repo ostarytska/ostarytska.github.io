@@ -1,0 +1,105 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+  }
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #be6674;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  
+  .my-plan {
+    color: rgb(244, 238, 238);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2),
+      0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 2px solid white;                 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+  }
+
+  .filter-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-inline label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .filter-inline select {
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: rgba(190, 102, 116, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .filter-inline select:hover {
+    background-color: rgba(190, 102, 116, 0.2); /* трохи менш прозорий при наведенні */
+  }
+  
+  @media (max-width: 1024px) {
+    .grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .text-sm {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-1 {
+      grid-template-columns: 1fr;
+    }
+  
+    .text-xs {
+      font-size: 12px;
+    }
+  
+    .p-sm {
+      padding: 10px;
+    }
+  
+    .hide-on-mobile {
+      display: none;
+    }
+  }

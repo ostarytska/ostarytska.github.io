@@ -6,7 +6,8 @@ import Training from './pages/Training';
 import Journal from './pages/Journal';
 import Progress from './pages/Progress';
 import Ration from './pages/Ration';
-import './styles/styles.css';
+
+import './styles/shared.css';
 
 
 

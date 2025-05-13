@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProgressChart from "../components/ProgressChart";
-
+import '../styles/progress.css';
 function Progress() {
   const [workouts, setWorkouts] = useState([]);
   const [completed, setCompleted] = useState([]);
 
   useEffect(() => {
-    fetch("/workouts.json")
+    fetch("/workout.json")
       .then((res) => res.json())
       .then((data) => {
         setWorkouts(data);
@@ -23,11 +23,12 @@ function Progress() {
 
   return (
     <>
-      <Header title="Мій прогрес" />
+      <Header
+  title="Мій прогрес" backgroundColor="#b0bec5"/>
       <main className="progress-page">
         <ProgressChart total={workouts} completed={completed} />
       </main>
-      <Footer />
+      <Footer backgroundColor="#b0bec5"/>
     </>
   );
 }
